@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Uzbekistan Business Directory Design System - Premium Blue Theme */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Professional Blue Palette */
+    --background: 0 0% 100%;
+    --foreground: 215 28% 17%;
+
+    /* Premium Blue Brand Colors */
+    --primary: 213 94% 68%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 213 94% 85%;
+    --primary-dark: 213 94% 45%;
+
+    /* Supporting Colors */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 215 28% 17%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 39 100% 57%;
+    --accent-foreground: 215 28% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 213 94% 68%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
+
+    /* Professional Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(213 94% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(213 94% 68%), hsl(220 100% 50%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 14% 98%));
+    --gradient-overlay: linear-gradient(180deg, hsl(213 94% 68% / 0.9), hsl(213 94% 45% / 0.95));
+
+    /* Professional Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(220 13% 69% / 0.1), 0 2px 4px -1px hsl(220 13% 69% / 0.06);
+    --shadow-premium: 0 20px 25px -5px hsl(213 94% 68% / 0.1), 0 10px 10px -5px hsl(213 94% 68% / 0.04);
+    --shadow-glow: 0 0 20px hsl(213 94% 68% / 0.3);
+
+    /* Smooth Transitions */
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 0 0% 98%;
+
+    --primary: 213 94% 68%;
+    --primary-foreground: 215 28% 17%;
+
+    --secondary: 215 28% 22%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 215 28% 22%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 39 100% 57%;
+    --accent-foreground: 215 28% 17%;
+
+    --border: 215 28% 22%;
+    --input: 215 28% 22%;
+    --ring: 213 94% 68%;
+
+    --card: 215 28% 17%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 28% 17%;
+    --popover-foreground: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
